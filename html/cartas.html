@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="../estilos/style.css" type="text/css" />
+		<script src="../js/cartas.js"></script>
+        <title>Cartas</title>
+	</head>    
+    <body onload="mezclar()">
+<!--	<body>-->
+  		<header class="container">
+			<section class="content">
+
+			<form name=frmCartas>
+
+                <div id="dvAciertos">Cantidad de aciertos: </div>
+                <div id="dvErrores">Cantidad de errores: </div>
+                <div id="dvGanados">Cantidad de partidas ganadas: </div>
+            
+                <table class="cartas">
+                    <tr>
+                        <td><div id="dvCarta1"><img id="carta1" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta2"><img id="carta2" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta3"><img id="carta3" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta4"><img id="carta4" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta5"><img id="carta5" src="../img/reversoCarta.png"/></div></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="carta1" value="1" onclick="elegirCarta(0)"></td>
+                        <td><input type="button" name="carta2" value="2" onclick="elegirCarta(1)"></td>
+                        <td><input type="button" name="carta3" value="3" onclick="elegirCarta(2)"></td>
+                        <td><input type="button" name="carta4" value="4" onclick="elegirCarta(3)"></td>
+                        <td><input type="button" name="carta5" value="5" onclick="elegirCarta(4)"></td>
+                    </tr>
+                </table>
+            <!--<input type="button" class="button" value="Mezclar" id="mezclar" onclick="mezclar()">
+
+            <button class="button" onclick="elegirCarta()">Elegir</button>-->
+				<button class="button" value="Mezclar" id="btnMezclar" onclick="mezclar(1)">Comenzar</button>
+
+		</div>-->
+            	<p>Encuentre todas las cartas marcadas: <img class="demo" src="../img/CartaMarcada.png"/> &nbsp; Si elige la carta <img class="demo" src="../img/CartaBomba.png"/> pierde el juego</p>
+            	<p id="verItems"></p>
+			</form>
+			</section>
+		</header>
+	</body>
+</html>
+

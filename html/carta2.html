@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="../estilos/style.css" type="text/css" />
+		<script src="../js/carta2.js"></script>
+        <title>TPE Segunda Parte</title>
+	</head>    
+    <body>
+<!--	<body>-->
+    	<nav class="navbar" id="top">
+        	<div id="navegador">
+        		<ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                    <li><a href="remates.html">Remates</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+        		</ul>
+        	</div>
+		</nav>
+  		<header class="container">
+			<section class="content">
+	            <div class="vertical-menu">
+					<!--<a href="#" class="active">Programas</a>-->
+					<a href="programas.html"><img src="../img/TV01.jpg"/></a>
+					<a href="programas.html"><img src="../img/TV02.jpg"/></a>
+					<a href="programas.html"><img src="../img/TV03.jpg"/></a>
+					<a href="programas.html"><img src="../img/TV04.jpg"/></a>
+                    <a href="programas.html"><img src="../img/TV05.png"/></a>
+                    <a href="programas.html"><img src="../img/TV06.png"/></a>
+				</div>
+
+			<form name=frmCartas>
+
+                <h1>MemoTUDAI</h1>
+                <div id="dvAciertos">Cantidad de aciertos: </div>
+                <div id="dvErrores">Cantidad de errores: </div>
+                <div id="dvGanados">Cantidad de partidas ganadas: </div>
+            
+                <table class="cartas">
+                    <tr>
+                        <td><div id="dvCarta1"><img id="carta1" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta2"><img id="carta2" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta3"><img id="carta3" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta4"><img id="carta4" src="../img/reversoCarta.png"/></div></td>
+                    </tr>
+                    <tr>
+<!--                        <td><input type="radio" name="carta" value="1" onclick="elegirCarta(0)"></td>
+                        <td><input type="radio" name="carta" value="2" onclick="elegirCarta(1)"></td>
+                        <td><input type="radio" name="carta" value="3" onclick="elegirCarta(2)"></td>
+                        <td><input type="radio" name="carta" value="4" onclick="elegirCarta(3)"></td>-->
+                        <td><input type="radio" name="carta" value="1"></td>
+                        <td><input type="radio" name="carta" value="2"></td>
+                        <td><input type="radio" name="carta" value="3"></td>
+                        <td><input type="radio" name="carta" value="4"></td>
+                    </tr>
+                    <tr>
+                        <td><div id="dvCarta5"><img id="carta5" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta6"><img id="carta6" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta7"><img id="carta7" src="../img/reversoCarta.png"/></div></td>
+                        <td><div id="dvCarta8"><img id="carta8" src="../img/reversoCarta.png"/></div></td>
+                    </tr>
+                    <tr>
+<!--                        <td><input type="radio" name="carta" value="5" onclick="elegirCarta(4)"></td>
+                        <td><input type="radio" name="carta" value="6" onclick="elegirCarta(5)"></td>
+                        <td><input type="radio" name="carta" value="7" onclick="elegirCarta(6)"></td>
+                        <td><input type="radio" name="carta" value="8" onclick="elegirCarta(7)"></td>-->
+                        <td><input type="radio" name="carta" value="5"></td>
+                        <td><input type="radio" name="carta" value="6"></td>
+                        <td><input type="radio" name="carta" value="7"></td>
+                        <td><input type="radio" name="carta" value="8"></td>
+                    </tr>
+                </table>
+            <!--<input type="button" class="button" value="Mezclar" id="mezclar" onclick="mezclar()">
+
+            <button class="button" onclick="elegirCarta()">Elegir</button>-->
+				<!--<button class="button" value="Mezclar" id="btnMezclar" onclick="mezclar(1)">Comenzar</button>
+                
+                <input type="text" class="button" name="tiempo" id="txtTiempo" value="1">-->
+				<input type="button" class="button" name="elegir" id="btnElegir" value="Elegir" onclick="elijoCarta()">
+                <input type="button" class="button" name="comienza" value="Comenzar" onclick="mezclar(1)">
+                <input type="button" class="button" name="marca" value="SiempreMarca" onclick="mezclar(2)">
+                
+                <!--<button class="button" value="Mezclar" id="btnMezclar" onclick="mezclar(2)">SiempreMarca</button>
+                <button onclick="elegir()">Elegir</button>
+		</div>-->
+            	<p>Encuentre todas las cartas con flores: <img class="demo" src="../img/CartaMarcada.png"/> &nbsp; Si elige la carta <img class="demo" src="../img/CartaBomba.png"/> pierde el juego</p>
+            	<p id="verItems"></p>
+			</form>
+			</section>
+		</header>
+	</body>
+</html>
+

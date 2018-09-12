@@ -1,0 +1,369 @@
+html, body, .container {
+  height: 100%;
+}
+
+/* Reset */
+html, body, h1, p, a, div, section {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* Basic */
+body {
+  font: 18px/23px "Calibri", sans-serif;
+  color: #d5cdf8;
+}
+
+h1 {
+  color: #728a14;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 50px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+a {
+  color: #ffffff;
+  cursor:pointer;
+}
+
+p {
+  margin: 0 0 15px 0;
+  color: #C93;
+}
+
+strong {
+  font-weight: 700;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+table.centrada {
+  margin-right:auto;
+  margin-left:auto;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+table.centrada td , th{
+text-align:left; /* para que no hereden las celdas en Iexplorer el centrado del texto*/
+  text-align: left;
+  padding: 8px;
+
+}
+
+table.centrada tr:nth-child(even){background-color: #9D88EE;opacity: 0.67;}
+
+table.centrada th {
+    background-color: #4CAF50;
+    color: white;
+	opacity: 0.67;
+}
+
+
+
+table.remates {
+  margin-right:auto;
+  margin-left:auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+
+table.remates td{
+	opacity: 0.77;
+    width: 30%;
+}
+
+
+
+table.cartas {
+  margin-right:auto;
+  margin-left:auto;
+}
+
+table.cartas td{
+  padding: 8px;
+  opacity: 0.87;
+}
+
+img.demo{
+  width: 52px;
+  height: 78px;
+}
+
+img.pgm{ /* Estilo de las imagenes de programas */
+  width: 60px;
+  height: 60px;
+float:left;
+
+}
+
+img.sponsors{ /* Estilo de las imagenes de sponsors */
+  width: 250px;
+  height: 275px;
+
+
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 60px;
+  z-index: 9999;
+  position: fixed;
+}
+
+  .inner {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+.navbar a {
+  display: inline-block;
+  /*border: 1px solid #fff;*/
+  font-size: 14px;
+  line-height: 24px;
+  border-radius: 3px;
+  padding: 2px 15px;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.container {
+  display: table;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.content-contacto{
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Special */
+.sub-title {
+  margin: 50px auto;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #03F;
+  border: 1px solid #cafaea;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#more-content {
+  display: none;
+}
+
+
+/* Estilos para que en el fondo se vea la imagen ocupando toda la pantalla*/
+body {
+margin : 0;
+padding : 0;
+/*background : url(bck.jpg) top left no-repeat;*/
+	background-image: url(../img/bck.jpg);
+	/* Nos aseguramos que la imagen de fondo este centrada vertical y
+    horizontalmente en todo momento */
+	background-position: center center;
+	/* La imagen de fondo no se repite */
+	background-repeat: no-repeat;
+	/* La imagen de fondo está fija en el viewport, de modo que no se mueva cuando
+     la altura del contenido supere la altura de la imagen. */
+	background-attachment: fixed;
+	/* La imagen de fondo se reescala cuando se cambia el ancho de ventana
+     del navegador */
+	background-size: cover;
+	/* Fijamos un color de fondo para que se muestre mientras se está
+    cargando la imagen de fondo o si hay problemas para cargarla  */
+	background-color: #464646;
+}
+/* Fin Estilos para que en el fondo se vea la imagen ocupando toda la pantalla*/
+
+
+/*Estilos de la barra navegador*/
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+/*estilo por defecto*/
+#navegador li a {
+   padding: 2px 7px 2px 7px;
+   color: #ffffff;
+/*   background-color: #09F;
+   border: 1px solid #006;*/
+   text-decoration: none;
+   opacity:77%;
+}
+/*estilo con mouse encima*/
+#navegador li a:hover{
+   background-color: #06F;
+   color: #ffffff;
+   opacity:88%;
+}
+/* Fin Estilos del navegador*/
+
+
+/*Esta clase se utiliza para poner texto sobre la imagen publicitaria del juego en la pagina de remates*/
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+	color: #C00;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: #C00;
+}
+
+
+
+.vertical-menu {
+    width: 50px;
+	float:left;
+}
+
+.vertical-menu img {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Texto Negro */
+    display: block; /* Hace aparece uno despues del otro */
+    padding: 12px;
+    text-decoration: none; /* Quita subrayado de links */
+}
+
+.vertical-menu img:hover {
+    background-color: #ccc; /* Gris on mouse-over */
+}
+
+.vertical-menu img.active {
+    background-color: #4CAF50; /* Verde si esta activo */
+    color: white;
+}
+
+
+/*
+.select-sim {
+  width:200px;
+  height:22px;
+  line-height:22px;
+  vertical-align:middle;
+  position:relative;
+  background:white;
+  border:1px solid #ccc;
+  overflow:hidden;
+}
+
+.select-sim::after {
+  content:"▼";
+  font-size:0.5em;
+  font-family:arial;
+  position:absolute;
+  top:50%;
+  right:5px;
+  transform:translate(0, -50%);
+}
+
+.select-sim:hover::after {
+  content:"";
+}
+
+.select-sim:hover {
+  overflow:visible;
+}
+
+.select-sim:hover .options .option label {
+  display:inline-block;
+}
+
+.select-sim:hover .options {
+  background:white;
+  border:1px solid #ccc;
+  position:absolute;
+  top:-1px;
+  left:-1px;
+  width:100%;
+  height:88px;
+  overflow-y:scroll;
+}
+
+.select-sim .options .option {
+  overflow:hidden;
+}
+
+.select-sim:hover .options .option {
+  height:22px;
+  overflow:hidden;
+}
+
+.select-sim .options .option img {
+  vertical-align:middle;
+}
+
+.select-sim .options .option label {
+  display:none;
+}
+
+.select-sim .options .option input {
+  width:0;
+  height:0;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+  float:left;
+  display:inline-block;
+  /* "hack" para que funcione en Firefox */
+/*  position: absolute;
+  left: -10000px;
+}
+
+.select-sim .options .option input:checked + label {
+  display:block;
+  width:100%;
+}
+
+.select-sim:hover .options .option input + label {
+  display:block;
+}
+
+.select-sim:hover .options .option input:checked + label {
+  background:#fffff0;
+}
+*/
